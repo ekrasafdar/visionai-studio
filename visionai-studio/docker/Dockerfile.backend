@@ -1,0 +1,5 @@
+# Thin wrapper — the real Dockerfile lives at backend/Dockerfile so the
+# backend image can also be built standalone (e.g. for Railway/Render).
+# This file exists only for `docker compose build` contexts that expect
+# a docker/ subfolder layout; see docker-compose.yml which builds from
+# ../backend directly using backend/Dockerfile.
